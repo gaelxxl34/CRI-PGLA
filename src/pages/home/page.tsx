@@ -54,11 +54,124 @@ export default function HomePage() {
             Recherche interdisciplinaire fondée sur des preuves pour la consolidation de la paix, la gouvernance, l'informatique, l'intelligence artificielle et la coopération régionale en Afrique centrale.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <button 
+              onClick={() => scrollToSection('event')}
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#c41e3a] text-white text-sm sm:text-base font-medium rounded-md hover:bg-[#a01830] transition-colors cursor-pointer whitespace-nowrap text-center"
+            >
+              Kinshasa Science Symposium
+            </button>
+            <button 
+              onClick={() => scrollToSection('mission')}
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white text-sm sm:text-base font-medium rounded-md hover:bg-white hover:text-[#1e3a5f] transition-colors cursor-pointer whitespace-nowrap"
+            >
+              Découvrir le CRI-PGLA
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Section - Kinshasa Science Symposium */}
+      <section id="event" className="py-20 px-6 bg-[#f8f9fa]">
+        <div className="max-w-[1100px] mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1 bg-[#c41e3a]/10 text-[#c41e3a] text-sm font-medium rounded-full mb-4">Événement à venir</span>
+            <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] mb-4">Kinshasa Science Symposium</h2>
+            <p className="text-lg text-[#5a6c7d] max-w-[700px] mx-auto">Dans le cadre de la Semaine Congolaise de la Science et de la Technologie</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <i className="ri-calendar-line text-3xl text-[#c41e3a] mb-3"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-1">Date</h3>
+              <p className="text-[#5a6c7d]">14 avril 2026</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <i className="ri-time-line text-3xl text-[#c41e3a] mb-3"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-1">Horaire</h3>
+              <p className="text-[#5a6c7d]">08h30 – 17h00</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <i className="ri-map-pin-line text-3xl text-[#c41e3a] mb-3"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-1">Lieu</h3>
+              <p className="text-[#5a6c7d]">Kinshasa, RDC</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-sm p-8 md:p-10 mb-10">
+            <h3 className="text-xl font-medium text-[#1e3a5f] mb-4">Présentation</h3>
+            <p className="text-[#5a6c7d] leading-relaxed mb-6">
+              Le Kinshasa Science Symposium est une rencontre scientifique organisée par le CRI-PGLA, visant à offrir une plateforme structurée de diffusion, de discussion et de valorisation des travaux de recherche scientifique issus des universités, centres de recherche et institutions partenaires.
+            </p>
+            <p className="text-[#5a6c7d] leading-relaxed mb-8">
+              L'organisation du symposium accorde une place centrale aux sessions posters, conçues comme des espaces privilégiés d'échanges approfondis, de mentorat scientifique et d'évaluation qualitative des travaux présentés. Les communications orales, sélectionnées par un comité scientifique, permettent de mettre en lumière des projets remarquables par leur qualité scientifique, leur originalité ou leur pertinence pour le développement régional.
+            </p>
+
+            <h3 className="text-xl font-medium text-[#1e3a5f] mb-4">Programme</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">08h30 – 09h00</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Accueil et enregistrement</p>
+                  <p className="text-sm text-[#5a6c7d]">Enregistrement des participants, remise des badges et des documents officiels.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">09h00 – 09h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Cérémonie d'ouverture</p>
+                  <p className="text-sm text-[#5a6c7d]">Mot de bienvenue, allocutions des autorités académiques et présentation des objectifs scientifiques.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">09h30 – 10h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Session orale – Communications scientifiques (Session 1)</p>
+                  <p className="text-sm text-[#5a6c7d]">Présentations orales de travaux sélectionnés par le comité scientifique, suivies d'échanges.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">10h30 – 12h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Session posters – Bloc 1</p>
+                  <p className="text-sm text-[#5a6c7d]">Présentations par affiches, échanges directs avec les chercheurs et évaluation scientifique.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">12h30 – 13h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Pause déjeuner</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">13h30 – 14h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Session orale – Communications scientifiques (Session 2)</p>
+                  <p className="text-sm text-[#5a6c7d]">Deuxième série de communications orales : recherche fondamentale, appliquée ou interdisciplinaire.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">14h30 – 16h30</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Session posters – Bloc 2</p>
+                  <p className="text-sm text-[#5a6c7d]">Approfondissement des échanges scientifiques et évaluation finale des travaux.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <span className="text-sm font-medium text-[#c41e3a] whitespace-nowrap min-w-[120px]">16h30 – 17h00</span>
+                <div>
+                  <p className="text-[#1e3a5f] font-medium">Clôture des activités scientifiques</p>
+                  <p className="text-sm text-[#5a6c7d]">L'annonce des lauréats interviendra lors de la cérémonie officielle de clôture de la Semaine Congolaise de la Science et de la Technologie.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
             <a 
               href="https://forms.gle/V35nxYFYRmCEF6258"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-[#c41e3a] text-white text-sm sm:text-base font-medium rounded-md hover:bg-[#a01830] transition-colors cursor-pointer whitespace-nowrap text-center"
+              className="inline-block px-10 py-4 bg-[#c41e3a] text-white text-base font-medium rounded-md hover:bg-[#a01830] transition-colors cursor-pointer"
             >
               Formulaire de collaboration
             </a>
@@ -66,70 +179,76 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Image Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-[1100px] mx-auto">
-          <img 
-            src="/images/conference.jpg" 
-            alt="African conference meeting"
-            className="w-full h-[400px] md:h-[500px] object-cover rounded-lg"
-          />
-        </div>
-      </section>
-
-      {/* Mission Section - Minimal */}
-      <section id="mission" className="py-24 px-6 bg-[#f8f9fa]">
+      {/* À propos du Centre */}
+      <section id="mission" className="py-24 px-6 bg-white">
         <div className="max-w-[900px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] mb-8">Notre Mission</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] mb-8">À propos du CRI-PGLA</h2>
+          <p className="text-lg text-[#5a6c7d] leading-relaxed mb-6">
+            Le Centre de Recherche Interdisciplinaire pour les Pays des Grands Lacs en Afrique (CRI-PGLA) est un espace de production, de mobilisation et de diffusion du savoir scientifique, intégrant les sciences sociales, les sciences juridiques, les sciences et technologies, l'ingénierie, l'intelligence artificielle, la data science, la santé publique et les innovations biomédicales.
+          </p>
           <p className="text-lg text-[#5a6c7d] leading-relaxed mb-8">
-            Le CRI-PGLA est une organisation de recherche et d'orientation politique dont la mission est d'améliorer la production de connaissances et de fournir des solutions fondées sur des preuves pour relever les défis de la consolidation de la paix, de la gouvernance, de la prévention des conflits, de la médiation, de la non-violence et du développement durable dans la région des Grands Lacs en Afrique.
+            Il ambitionne de transformer les connaissances scientifiques en outils concrets d'aide à la décision, en solutions technologiques responsables et en recommandations stratégiques utiles aux décideurs publics, aux organisations régionales et à la société civile.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
-                <i className="ri-search-line text-3xl text-[#c41e3a]"></i>
+                <i className="ri-flask-line text-3xl text-[#c41e3a]"></i>
               </div>
-              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Recherche</h3>
-              <p className="text-sm text-[#5a6c7d]">Production de connaissances rigoureuses et fondées sur des preuves</p>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Recherche & Innovation</h3>
+              <p className="text-sm text-[#5a6c7d]">Production de connaissances de haut niveau et développement de prototypes et preuves de concept</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
-                <i className="ri-hand-heart-line text-3xl text-[#c41e3a]"></i>
+                <i className="ri-share-forward-line text-3xl text-[#c41e3a]"></i>
               </div>
-              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Médiation</h3>
-              <p className="text-sm text-[#5a6c7d]">Promotion de la paix, de la non-violence et du dialogue</p>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Transfert technologique</h3>
+              <p className="text-sm text-[#5a6c7d]">Transfert des résultats vers des acteurs capables de les industrialiser ou de les déployer à grande échelle</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 flex items-center justify-center mx-auto mb-4">
-                <i className="ri-government-line text-3xl text-[#c41e3a]"></i>
+                <i className="ri-graduation-cap-line text-3xl text-[#c41e3a]"></i>
               </div>
-              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Politique</h3>
-              <p className="text-sm text-[#5a6c7d]">Soutien aux politiques publiques et à la coopération régionale</p>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-2">Formation & Capacités</h3>
+              <p className="text-sm text-[#5a6c7d]">Renforcement des compétences scientifiques et techniques, avec un accent sur la jeunesse de la région</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Focus Areas - Clean Cards */}
-      <section className="py-24 px-6">
+      {/* Domaines prioritaires */}
+      <section className="py-24 px-6 bg-[#f8f9fa]">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] text-center mb-16">Axes de Recherche</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-8 border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <h3 className="text-xl font-medium text-[#1e3a5f] mb-3">Paix et résolution des conflits</h3>
-              <p className="text-[#5a6c7d] text-sm leading-relaxed">Analyse des dynamiques de conflit et développement de stratégies de consolidation de la paix.</p>
+          <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] text-center mb-16">Domaines Prioritaires</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-search-eye-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Recherche scientifique interdisciplinaire</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Recherches sur les dynamiques géopolitiques, économiques, juridiques, sociales et technologiques des pays des Grands Lacs.</p>
             </div>
-            <div className="p-8 border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <h3 className="text-xl font-medium text-[#1e3a5f] mb-3">Gouvernance et politique publique</h3>
-              <p className="text-[#5a6c7d] text-sm leading-relaxed">Recherche sur les institutions démocratiques et les réformes de gouvernance.</p>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-robot-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Sciences, technologies et innovation</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Intelligence artificielle, data science et ingénierie pour concevoir des outils et solutions innovantes soutenant l'analyse stratégique.</p>
             </div>
-            <div className="p-8 border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <h3 className="text-xl font-medium text-[#1e3a5f] mb-3">Informatique et Intelligence Artificielle</h3>
-              <p className="text-[#5a6c7d] text-sm leading-relaxed">Recherche en sciences informatiques et applications de l'IA pour le développement régional.</p>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-heart-pulse-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Santé publique et résilience sanitaire</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Prévention, gestion des risques sanitaires et résilience des systèmes de santé par des approches scientifiques et numériques.</p>
             </div>
-            <div className="p-8 border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <h3 className="text-xl font-medium text-[#1e3a5f] mb-3">Développement durable</h3>
-              <p className="text-[#5a6c7d] text-sm leading-relaxed">Solutions pour un développement économique et social équitable et durable.</p>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-scales-3-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Recherche juridique et formation en droit</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Sciences juridiques couvrant le numérique, la cybersécurité, la régulation de l'IA et la protection des données.</p>
+            </div>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-bar-chart-grouped-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Analyse des politiques publiques</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Analyses scientifiques et socio-juridiques pour appuyer la prise de décision fondée sur des données probantes.</p>
+            </div>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
+              <i className="ri-book-open-line text-2xl text-[#c41e3a] mb-4 block"></i>
+              <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Production et diffusion du savoir</h3>
+              <p className="text-[#5a6c7d] text-sm leading-relaxed">Publications, rapports, plateformes numériques et données ouvertes pour un accès ouvert au savoir scientifique.</p>
             </div>
           </div>
         </div>
@@ -139,19 +258,32 @@ export default function HomePage() {
       <section className="py-12 px-6">
         <div className="max-w-[1100px] mx-auto">
           <img 
-            src="/images/collaboration.jpg" 
-            alt="African professionals collaborating in meeting"
+            src="/images/conference.jpg" 
+            alt="Conférence scientifique CRI-PGLA"
             className="w-full h-[350px] object-cover object-top rounded-lg"
           />
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="py-24 px-6 bg-[#f8f9fa]">
+        <div className="max-w-[900px] mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] mb-8">Notre Vision</h2>
+          <p className="text-lg text-[#5a6c7d] leading-relaxed mb-6">
+            Le CRI-PGLA aspire à devenir un pôle d'excellence et un think tank de référence pour les Pays des Grands Lacs, en promouvant la liberté académique, l'intégrité scientifique, l'interdisciplinarité et l'accès ouvert au savoir.
+          </p>
+          <p className="text-lg text-[#5a6c7d] leading-relaxed">
+            Le Centre incarne la conviction que le génie scientifique africain, lorsqu'il est structuré, soutenu et orienté vers l'intérêt collectif, peut devenir un puissant moteur de transformation durable pour les générations présentes et futures.
+          </p>
         </div>
       </section>
 
       {/* CTA Section */}
       <section id="contact" className="py-24 px-6 bg-[#1e3a5f]">
         <div className="max-w-[700px] mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-white mb-6">Partenariat</h2>
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-6">Partenariat & Collaboration</h2>
           <p className="text-lg text-white/80 mb-10 leading-relaxed">
-            Nous collaborons avec les gouvernements, organisations internationales, institutions académiques et la société civile pour promouvoir la paix et le développement dans la région des Grands Lacs.
+            La réussite de notre ambition repose sur la mobilisation des compétences scientifiques africaines et sur la création de synergies avec les institutions académiques, les centres de recherche internationaux et les partenaires techniques et financiers.
           </p>
           <a 
             href="mailto:cripla0243@gmail.com"
