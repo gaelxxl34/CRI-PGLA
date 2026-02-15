@@ -83,7 +83,7 @@ export default function HomePage() {
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <i className="ri-calendar-line text-3xl text-[#c41e3a] mb-3"></i>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-1">Date</h3>
-              <p className="text-[#5a6c7d]">14 avril 2026</p>
+              <p className="text-[#5a6c7d]">17 avril 2026</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <i className="ri-time-line text-3xl text-[#c41e3a] mb-3"></i>
@@ -220,33 +220,45 @@ export default function HomePage() {
         <div className="max-w-[1100px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-[#1e3a5f] text-center mb-16">Domaines Prioritaires</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-search-eye-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#1e3a5f]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-microscope-line text-2xl text-[#1e3a5f]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Recherche scientifique interdisciplinaire</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Recherches sur les dynamiques géopolitiques, économiques, juridiques, sociales et technologiques des pays des Grands Lacs.</p>
             </div>
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-robot-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#7c3aed]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-cpu-line text-2xl text-[#7c3aed]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Sciences, technologies et innovation</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Intelligence artificielle, data science et ingénierie pour concevoir des outils et solutions innovantes soutenant l'analyse stratégique.</p>
             </div>
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-heart-pulse-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#059669]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-stethoscope-line text-2xl text-[#059669]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Santé publique et résilience sanitaire</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Prévention, gestion des risques sanitaires et résilience des systèmes de santé par des approches scientifiques et numériques.</p>
             </div>
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-scales-3-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#d97706]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-scales-2-line text-2xl text-[#d97706]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Recherche juridique et formation en droit</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Sciences juridiques couvrant le numérique, la cybersécurité, la régulation de l'IA et la protection des données.</p>
             </div>
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-bar-chart-grouped-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#c41e3a]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-line-chart-line text-2xl text-[#c41e3a]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Analyse des politiques publiques</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Analyses scientifiques et socio-juridiques pour appuyer la prise de décision fondée sur des données probantes.</p>
             </div>
-            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:border-[#c41e3a] transition-colors">
-              <i className="ri-book-open-line text-2xl text-[#c41e3a] mb-4 block"></i>
+            <div className="p-8 bg-white border border-[#e5e7eb] rounded-lg hover:shadow-md transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#0284c7]/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <i className="ri-global-line text-2xl text-[#0284c7]"></i>
+              </div>
               <h3 className="text-lg font-medium text-[#1e3a5f] mb-3">Production et diffusion du savoir</h3>
               <p className="text-[#5a6c7d] text-sm leading-relaxed">Publications, rapports, plateformes numériques et données ouvertes pour un accès ouvert au savoir scientifique.</p>
             </div>
@@ -258,8 +270,8 @@ export default function HomePage() {
       <section className="py-12 px-6">
         <div className="max-w-[1100px] mx-auto">
           <img 
-            src="/images/conference.jpg" 
-            alt="Conférence scientifique CRI-PGLA"
+            src="/images/collaboration.jpg" 
+            alt="Collaboration scientifique CRI-PGLA"
             className="w-full h-[350px] object-cover object-top rounded-lg"
           />
         </div>
